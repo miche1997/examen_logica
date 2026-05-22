@@ -13,6 +13,14 @@ public class EntradaDeDatos {
     }
 
     public static void manejarSaltoDeLineaPendiente() {
-        
+        Scanner salto = new Scanner (System.in);
+        System.out.println("ingresa tu edad");
+        int edad = salto.nextInt();
+        salto.nextLine();
+        System.out.println("ingresa tu nombre ");
+        string nombre = salto.nextLine();
+        System.out.println("datos guardados con éxito"+nombre + "tiene"+edad +"años");
+        salto.close();
+
     }
 }
