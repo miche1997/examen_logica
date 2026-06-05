@@ -1,10 +1,10 @@
 package com.example;
 
-import javax.print.DocFlavor.STRING;
+
 
 public class VariablesYConstantes {
     public static void demostrarDeclaracionAsignacion() {        
-        // TODO
+
         int edad = 30;
         double estatura = 1.8;
         System.out.println(edad);
@@ -17,7 +17,8 @@ public class VariablesYConstantes {
     }
 
     public static void demostrarConstantes() {
-        // TODO
-        final double pi = 3.14159;
+
+        final double PI = 3.14159;
+        // DA ERROR POR QUE ES UNA CONSTANTE Y NO SE SOBREESCRIBEN SUS VALORES.  PI = 2000;
     }
 }

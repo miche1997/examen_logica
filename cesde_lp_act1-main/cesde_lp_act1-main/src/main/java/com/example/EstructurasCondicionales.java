@@ -11,9 +11,11 @@ public class EstructurasCondicionales {
 
     public static void ejemploIfElse() {
         // TODO
-        int edad = 18;
-        if (edad <= 18) {
-            System.out.println("no puede votar");
+        int edad = 15;
+        if (edad >= 18) {
+            System.out.println("puede votar ");
+        }else {
+            System.out.println("no puedes votar");
         }
     }
 
@@ -46,26 +48,35 @@ public class EstructurasCondicionales {
             case 7:
                 System.out.println("domingo");
                 break;
+            default:
+                System.out.println("fuera de rango");
 
         }
+
 
     }
 
     public static void ejemploSwitchExpression() {
         // TODO
         String estacion = "verano";
-       String estaciones = switch (estacion) {
-            case 1 -> "Primavera"
-            break;
-            case 2 -> "invierno"
-            break;
-            case 3 -> "otoño" 
-            break;
-            case 4 -> "verano"
-                break;
-        
-            default -> "estación invalida"
-                break;
+
+        switch (estacion) {
+            case "primavera" -> {
+                System.out.println("Primavera");
+            }
+            case "invierno" -> {
+                System.out.println("Invierno");
+            }
+            case "otoño" -> {
+                System.out.println("Otoño");
+            }
+            case "verano" -> {
+                System.out.println("Verano");
+            }
+            default -> {
+                System.out.println("Estación inválida");
+            }
+
         }
     
     }
