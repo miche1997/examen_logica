@@ -14,11 +14,11 @@ public class EstructurasDeRepeticion {
         }
     }
 
-    public static void ejemploDoWhile(Scanner entrada) {
+    public static void ejemploDoWhile(Scanner entrada, int num) {
         int numero;
         do {
             System.out.println("ingresa un número");
-            numero = entrada.nextInt();
+            numero = num;
         } while (numero != 0);
         System.out.println("ciclo finalizado");
     }

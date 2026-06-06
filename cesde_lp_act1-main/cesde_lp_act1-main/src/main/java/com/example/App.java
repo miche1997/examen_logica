@@ -50,7 +50,7 @@ public class App {
         // 6. Estructuras de Repetición
         System.out.println("\n--- Tema: EstructurasDeRepeticion ---");
         EstructurasDeRepeticion.ejemploWhile();
-        EstructurasDeRepeticion.ejemploDoWhile(teclado);
+        EstructurasDeRepeticion.ejemploDoWhile(teclado,0);
         EstructurasDeRepeticion.ejemploForClasico();
         EstructurasDeRepeticion.ejemploForAnidado();
         EstructurasDeRepeticion.ejemploBreakContinue();
@@ -66,29 +66,27 @@ public class App {
         System.out.println("Valor retornado: " + valorRetornado);
         MetodosEstaticosSimples.area(100);
         MetodosEstaticosSimples.area(60,100);
-/*
-        // 8. Arreglos Unidimensionales
-        System.out.println("\n--- Tema: ArreglosUnidimensionales ---");
-        ArreglosUnidimensionales.declararCrearInicializar();
-        ArreglosUnidimensionales.mostrarLongitud();
-        ArreglosUnidimensionales.recorrerConForClasico();
-        ArreglosUnidimensionales.recorrerConForEach();
-        int[] miArray = {5, 10, 15};
-        ArreglosUnidimensionales.arrayComoParametroYRetorno(miArray);
 
+         //8. Arreglos Unidimensionales
+        System.out.println("\n--- Tema: ArreglosUnidimensionales ---");
+        ArreglosUnidimensionales.numeroMenor();
+        ArreglosUnidimensionales.invertirArreglo();
+        ArreglosUnidimensionales.recorrerConForEach();
+        
+    
+ 
         // 9. Arreglos Bidimensionales
         System.out.println("\n--- Tema: ArreglosBidimensionales ---");
-        ArreglosBidimensionales.declararCrearMatrices();
-        ArreglosBidimensionales.recorrerMatriz();
-        ArreglosBidimensionales.ejemploUsosTipicos();
+        ArreglosBidimensionales.matriz2x2();
+        ArreglosBidimensionales.matriz3x3();
+       
 
         // 10. Manipulación de Cadenas
-        System.out.println("\n--- Tema: ManipulacionCadenas ---");
-        ManipulacionCadenas.demostrarConcatenacion();
+        System.out.println("\n--- Tema: ManipulacionCadenas ---");  
         ManipulacionCadenas.demostrarMetodosUtiles();
-        ManipulacionCadenas.demostrarInmutabilidad();
+        ManipulacionCadenas.Inmutabilidad();
         ManipulacionCadenas.usarStringBuilder();
-
+/* 
         // 11. Manejo Básico de Excepciones
         System.out.println("\n--- Tema: ManejoBasicoExcepciones ---");
         ManejoBasicoExcepciones.ejemploTryCatchDivision();
